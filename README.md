@@ -1,7 +1,4 @@
 # Landing-page
-Landing Page
-
-# Landing-page
 
 [Live Demo](https://hmjatt.github.io/Rock-Paper-Scissors/)
 
