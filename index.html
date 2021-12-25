@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="wrapper">
-        <header>
-            <div class="items-left">
-                <ul>
+            <div id="items-left-header">
+                <ul >
                     <li><a href="">Logo</a></li>
                     <li><a href="">Whats Inside</a></li>
                     <li><a href="">Projects</a></li>
@@ -19,73 +21,76 @@
                 </ul>
             </div>
                 
-            <div class="items-right">
+            <div id="items-right-header">
                 <ul>
                     <li><a href="">Twitter Logo</a></li>
                     <li><a href="">Github Logo</a></li>
                 </ul>
             </div>
-        </header>
-        <div id=div1>
-            <div class="image">
-                <p> Whats Inside image </p>
+
+            <div id="image1">
+                <img src="images/div1-img.jpg" alt="whats-inside-img">
             </div>
-            <div class="heading>">
+            <div id = text1>
                 <h1>Whats Inside heading</h1>
+
+                <div class="para>">
+                    <p>Whats Inside Paragraph</p>
+                </div>
+                <div id="reach-me-button">
+                    <p>best way to reach me
+                        <button>click me</button>
+                    </p>
+                </div>
             </div>
-            <div class="para>">
-                <p>Whats Inside Paragraph</p>
+
+        
+            <div id="image2">
+                <img src="images/div2-img.jpg" alt="projects-img">
             </div>
-            <div id="reach-me-button">
-                <p>best way to reach me
-                    <button>click me</button>
-                </p>
-            </div>
-        </div>
-        <div id=div2>
-            <div class="image">
-                <p>Projects image </p>
-            </div>
-            <div class="heading>">
+            <div id=text2>
                 <h1>Projects heading</h1>
+                <div class="para>">
+                    <p>Projects Paragraph</p>
+                </div>
             </div>
-            <div class="para>">
-                <p>Projects Paragraph</p>
-            </div>
+                
+            
+            
+
+        <div id="quote">
+            <p>Some quote</p>
         </div>
-        <div id=div3>
-            <div id="quote">
-                <p>Some quote</p>
-            </div>
-            <div class="image">
-                <p>About image </p>
-            </div>
-            <div class="heading>">
-                <h1>About heading</h1>
-            </div>
+
+        <div id="image3">
+            <img src="images/div3-img.jpg" alt="about-img">
+        </div>
+
+        <div id=text3>
+            <h1>About heading</h1>
             <div class="para>">
                 <p>About Paragraph</p>
             </div>
         </div>
+       
     
-        <footer>
-            <div class="items-left">
-                <ul>
-                    <li><a href="">Logo</a></li>
-                    <li><a href="">copyright</a></li>
-                </ul>
-            </div>
+        
+     
+        <div id="items-left-footer">
+            <ul>
+                <li><a href="">Logo</a></li>
+                <li><a href="">copyright</a></li>
+            </ul>
+        </div>
 
-            <div class="items-right">
-                <ul>
-                    <li><a href="">BACK TO TOP</a></li>
-                    <li><a href="">UP ARROW</a></li>
-                    <li><a href="">CHATBOT</a></li>
-                </ul>
-            </div>
-            
-
-        </footer>
+        <div id="items-right-footer">
+            <ul>
+                <li><a href="">BACK TO TOP</a></li>
+                <li><a href="">UP ARROW</a></li>
+                <li><a href="">CHATBOT</a></li>
+            </ul>
+        </div>
+        
     </div>
     
     <script src="script.js"></script>

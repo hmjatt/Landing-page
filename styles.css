@@ -1,5 +1,107 @@
 html {
-    background-image: linear-gradient(#ffcb9c, #d675c7, #8eb0ff);
-    height: 100vh;
+    background: #AAFFA9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,#AAFFA9, #A9FFD3,#D5FFA9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,#AAFFA9, #A9FFD3,#D5FFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Montserrat', sans-serif;
 
 }
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#wrapper {
+
+    display: grid;
+    width: 100%;  
+    height: 100%; 
+    grid-template-rows: 100px 1fr 1fr 100pxfr 1fr 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    grid-template-areas:   "header1 header1 header1 header2"
+                            "image1  image1 text1 text1"
+                            "text2 text2 image2 image2"
+                            ". quote quote ."
+                            "image3 image3 text3 text3"
+                            "footer1 footer1 footer1 footer2";
+    
+}
+
+#items-left-header {
+  
+    grid-area: header1;
+
+}
+
+#items-right-header{
+   
+    grid-area: header2;
+
+}
+
+#image1 {
+    grid-area:image1;
+}
+
+#image1 img{
+   
+    max-height: 800px;
+    max-width: 400px;
+    
+}
+
+#text1 {
+    
+    grid-area: text1;
+
+}
+
+#image2 {
+    grid-area:image2; 
+}
+
+#image2 img{
+    
+   
+    max-height: 800px;
+    max-width: 400px;
+}
+
+#text2 {
+    
+    grid-area: text2;
+ 
+}
+
+#quote {
+    
+    grid-area: quote;
+}
+
+#image3 {
+    grid-area:image3;
+}
+
+#image3 img{
+    
+    max-height: 800px;
+    max-width: 400px;
+ 
+    /* object-fit: cover;  */
+}
+#text3{
+    
+    grid-area: text3;
+}
+
+#items-left-footer{
+    
+    grid-area: footer1;
+}
+
+#items-right-footer{
+    
+    grid-area: footer2;
+}
+
