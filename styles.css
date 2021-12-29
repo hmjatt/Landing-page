@@ -1,10 +1,11 @@
 
 
 
-html body {
+html, body {
     
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+
 
 }
 li, a {
@@ -14,6 +15,7 @@ li, a {
     font-size: 32px;
     color: rgb(0, 0, 0);
     font-family: 'Exo 2', sans-serif;
+    
 }
 
 
@@ -24,15 +26,18 @@ li, a {
 .link-hover {
     display:inline-block;
      margin:0;
-     text-transform:uppercase;
+    color: rgb(0, 0, 0);
+
      
 }
 .link-hover:after {
     display:block;
     content: '';
-    border-bottom: solid 2px #ffffff; 
+    border-bottom: solid 4px #00658d; 
+    border-radius: 500px;
      
     transform: scaleX(0);
+    
     
     transition: transform 250ms ease-in-out;
 }
@@ -41,10 +46,7 @@ li, a {
     
 }
 
-#items-left-footer li a, #items-right-footer li a {
-    color: rgb(0, 0, 0);
-    
-}
+
 
 #text1 h1, #text2 h1, #text3 h1 {
     font-size: 46px;
@@ -59,6 +61,12 @@ li, a {
 
 #wrapper {
     padding: 3%;
+    padding-top: 2px;
+    margin-top: 5px;
+    padding-bottom: 55px;
+    margin-bottom: 21px;
+    
+    
     background-image: linear-gradient(to top, #ffdd9f, #affccf);
 
     display: grid;
@@ -67,23 +75,29 @@ li, a {
     grid-template-rows: 100px 1fr 1fr 100px 1fr 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr ; 
     
-    grid-template-areas:   "header1 header1  header2 header2"
+    grid-template-areas:   "header1 header1  header1 header1"
                             " image1 image1 text1 text1"
                             " text2 text2 image2 image2 "
-                            " .  quote quote . "
+                            " quote  quote quote quote "
                             " image3 image3 text3 text3 "
-                            "footer1 footer1 footer2 footer2";
+                            "footer footer footer footer";
     
 }
-
 
 
 #items-left-header {
   
     grid-area: header1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+    backdrop-filter: blur(5px);
     
+    border-radius: 100px;
+    border-top-width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
     
 
 }
@@ -93,6 +107,10 @@ li, a {
     grid-area: header2;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
 
 }
 
@@ -189,30 +207,28 @@ li, a {
 #text3{
     
     grid-area: text3;
-    color: rgb(4, 14, 37);
+    color: rgb(0, 0, 0);
 }
 
-#items-left-footer{
-    
-    grid-area: footer1;
-    
-}
 
-#items-right-footer{
-    
-    grid-area: footer2;
-}
 
-#items-left-header ul, #items-left-footer ul {
+
+
+
+
+
+#items-left-header ul{
     display: flex;
     justify-content: flex-start;
 }
-#items-right-header ul, #items-right-footer ul{
+#items-right-header ul{
     display: flex;
     justify-content: flex-end;
 }
 
-#items-left-header ul li, #items-right-header ul li, #items-left-footer ul li, #items-right-footer ul li {
+
+
+#items-left-header ul li, #items-right-header ul li{
     align-self: center;
     
 }
@@ -222,14 +238,91 @@ li, a {
     max-width: 400px;
 }
 
-#twitter, #github{
+#twitter, #github {
     height: 48px;
     margin-right: 20px;
-    fill: grey;
+    
     
 }
-#logo {
+#items-left-header .logo {
     height: 64px;
+    padding-top: 7px;
+}
+
+footer {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: footer;
+    backdrop-filter: blur(5px);
+    border-radius: 7px;
+    background-color: #ffffff31;
+background-image: linear-gradient(to right, #ffffff31 0%, #ffffff31 74%);
+    height: 150px;
+    z-index: 1;
+   
+}
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    backdrop-filter: blur(15px);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: #36096d31;
+    background-image: linear-gradient(to right, #36096d31 0%, #37d6d631 74%);
+    
+    
+
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 50%;
+  
+}
+#logo-footer {
+    align-self: center;
+    
+}
+#logo-footer .logo {
+    height: 64px;
+}
+#up-arrow .up-arrow {
+    height: 40px;
+
+}
+#up-arrow{
+    align-self: center;
+
+}
+
+#copyright {
+    backdrop-filter: blur(15px);
+    background-color: #36096d31;
+    background-image: linear-gradient(to right, #36096d31 0%, #37d6d631 74%);
+    
+    
+
+    margin-left: -30px;
+    margin-right: -30px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    height: 50%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  
+}
+
+#git-logo-2 {
+    display: flex;
+    justify-content: center;
+}
+#git-logo-2 img {
+    height: 40px;
+    
+    align-self: center;
 }
 
 
@@ -240,8 +333,10 @@ li, a {
         column-gap: 0px;
         display: grid;
         width: auto;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
         row-gap: 50px;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         grid-template-rows: auto;
         grid-template-areas:
         " header1"
@@ -252,19 +347,19 @@ li, a {
         "quote"
         "image3"
         "text3"
-        "footer1";
+        "footer";
    }
 
+  
    #items-left-header {
-       justify-self: center;
+       justify-content: center;
    }
     #items-left-header ul {
         padding-left: 0px;
     }
-    
 
 
-   #items-right-header, #items-right-footer{
+   #items-right-header{
        display: none;
    }
 
@@ -289,7 +384,11 @@ li, a {
         font-size: 26px;
         transition: ease-in-out 0.5s, transform 1s;
     }
-}
+
+  
+
+   
+}   
 
 @media (max-width:420px) {
     li, a {
@@ -313,11 +412,12 @@ li, a {
     
    
     #p {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    #logo {
-        height: 48px;
+    #items-left-header .logo {
+        height: 42px;
+    
     }
 }
