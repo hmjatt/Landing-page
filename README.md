@@ -1,6 +1,6 @@
 # Landing-page
 
-[Live Demo](https://hmjatt.github.io/Rock-Paper-Scissors/)
+[Live Demo](https://hmjatt.github.io/Landing-page/)
 
 Inspiration of this Landing Page came from  this [Page](https://unbounce.com/landing-page-template/o-book/), i just tried to recreate this page to practice my skills. Please feel free to give me reviews at //twitter button
 
