@@ -490,4 +490,12 @@ small {
         width: 120px;
         height: 60px;
     }
+
+    #logo-footer a img {
+        width: 84px;
+    }
+    .git-logo-2{
+        
+        align-self: center;
+    }
 }
