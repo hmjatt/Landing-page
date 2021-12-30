@@ -50,12 +50,19 @@ li, a {
 
 
 #text1 h1, #text2 h1, #text3 h1 {
-    font-size: 46px;
+    font-size: 80px;
     text-align: center;
+    color: rgba(2, 2, 2, 0.76);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
 }
 #text1 p,  #text2  p, #text3 p, #quote p{
     text-align: center;
-    font-size: 24px;
+    font-size: 34px;
+    color: rgba(32, 32, 32, 0.945);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    
 }
 
 
@@ -72,7 +79,7 @@ li, a {
 
     display: grid;
     column-gap: 50px;
-    row-gap: 50px;
+    row-gap: 150px;
     grid-template-rows: 100px 1fr 1fr 100px 1fr 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr ; 
     
@@ -94,7 +101,7 @@ li, a {
     position: sticky;
     top: 10px;
     z-index: 1;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     
     border-radius: 100px;
     border-top-width: 1px;
@@ -136,7 +143,7 @@ li, a {
     grid-area: image1;
     max-width: 600px;
     max-height: 800px;
-    width: 100%;
+    
     height: auto;
     display: flex;
     justify-self: center;
@@ -146,7 +153,7 @@ li, a {
     
     
 }
-#text1, #text2, #text3 {
+#text1, #text3 {
     display: flex;
     justify-self: center;
     flex-direction: column;
@@ -165,6 +172,10 @@ li, a {
 
 #text2 {
     grid-area: text2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 
@@ -173,7 +184,7 @@ li, a {
 #image2 {
     grid-area:image2; 
     filter: brightness(85%);
-    width: 100%;
+    
     max-width: 600px;
     max-height: 800px;
     height: auto;
@@ -185,15 +196,75 @@ li, a {
 
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+
+    font-size: 5px;
+}
+.buttons button a {
+    color: rgb(255, 255, 255);
+}
+
+.live-demo{
+
+    background: rgba(150, 150, 150, 0);
+    background-image: linear-gradient(to right, #6969693f, #69696936);
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 7px;
+    margin-right: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.code-preview {
+    background: rgba(150, 150, 150, 0);
+    background-image: linear-gradient(to right, #6969693f, #69696936);
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 7px;
+    margin-right: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
+.live-demo:hover, .code-preview:hover{
+    background: rgba(150, 150, 150, 0);
+    background-image: linear-gradient(to right, #ffffff28, #ffffff6e);
+    border: none;
+    color: black;
+
+}
+
+
+
+
 #quote {
     
     grid-area: quote;
     font-style: italic;
+    text-transform:uppercase;
+    
+}
+
+#quote p {
+    font-weight: 900;
 }
 
 #image3 {
     grid-area:image3;
-    width: 100%;
+    
     max-width: 600px;
     max-height: 800px;
     height: auto;
@@ -229,8 +300,14 @@ li, a {
 }
 
 
-.para {
-    max-width: 400px;
+
+.twitter-class{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.twitter-class a{
+    align-self: center;
 }
 
 #twitter, #github {
@@ -287,11 +364,11 @@ background-image: linear-gradient(to left, #00ff8800 , #00ffff18, #00ff9d00);
 small {
     align-self: center
 }
-#git-logo-2 {
+.git-logo-2 {
     display: flex;
     justify-content: center;
 }
-#git-logo-2 img {
+.git-logo-2 img {
     height: 40px;
     align-self: center;
 }
@@ -340,22 +417,40 @@ small {
         justify-self:  center;
     }
     
-    #text1 p, #text2  p, #text3 p, #quote p{
-        text-align: center;
-        font-size: 20px;
-        font-weight: 400;
+    #text1 h1, #text2 h1, #text3 h1{
+    
+        font-size: 55px;
+        
+    
     }
     
-   
 
     li, a {
         font-weight: 300;
         font-size: 26px;
         transition: ease-in-out 0.5s, transform 1s;
     }
+    #text1 p,  #text2  p, #text3 p, #quote p{
+        
+        font-size: 24px;
+    }
 
-  
+    #items-left-header .logo {
+        height: 42px;
+    
+    }
 
+    .code-preview, .live-demo{
+        width: 150px;
+        height: 60px;
+    }
+
+    #text2 {
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        justify-content: center;
+    }
    
 }   
 
@@ -373,7 +468,7 @@ small {
     } 
 
     #text1 h1, #text2 h1, #text3 h1 {
-        font-size: 26px;
+        font-size: 43px;
     }
     #projects-header {
         padding: 0px;
@@ -391,8 +486,8 @@ small {
         padding-right: 10px;
     }
 
-    #items-left-header .logo {
-        height: 42px;
-    
+    .code-preview, .live-demo{
+        width: 120px;
+        height: 60px;
     }
 }
