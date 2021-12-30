@@ -2,7 +2,7 @@
 
 [Live Demo](https://hmjatt.github.io/Landing-page/)
 
-Inspiration of this Landing Page came from  this [Page](https://unbounce.com/landing-page-template/o-book/), i just tried to recreate this page to practice my skills. Please feel free to give me reviews at //twitter button
+My landing page, i created this page to practice my skills. Please feel free to give me reviews at my [Twitter](https://twitter.com/hmjatt/)
 
 ### Technologies Used 
 
