@@ -310,11 +310,13 @@ li, a {
     align-self: center;
 }
 
-#twitter, #github {
+.twitter, #github {
     height: 48px;
-    margin-right: 20px;
-    
-    
+    margin-right: 20px;  
+}
+
+#emoji {
+    font-size: 40px;
 }
 #items-left-header .logo {
     height: 64px;
