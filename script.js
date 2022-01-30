@@ -1,0 +1,1 @@
+//Two JavaScript variables are in a bar. "I'm sorry I cannot be with you, your so not my Type.", one says. The other Recasts and they lived happily ever after.
