@@ -5,7 +5,7 @@
 
 [Live Demo](https://hmjatt.github.io/Landing-page/)
 
-My landing page, i created this page to practice my skills. Please feel free to give me reviews at my [Twitter](https://twitter.com/hmjatt/)
+My landing page, i created this page to practice my skills and showcase my latest projects. Please feel free to give me reviews at my [Twitter](https://twitter.com/hmjatt/)
 
 ### Technologies Used 
 
