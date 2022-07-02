@@ -1,9 +1,11 @@
 # Landing-page
 
+## [Live Demo](https://hmjatt.github.io/Landing-page/)
+
 ![This is an image](https://raw.githubusercontent.com/hmjatt/Landing-page/main/images/Landig-page.png)
 
 
-[Live Demo](https://hmjatt.github.io/Landing-page/)
+
 
 My landing page, i created this page to practice my skills and showcase my latest projects. Please feel free to give me reviews at my [Twitter](https://twitter.com/hmjatt/)
 
