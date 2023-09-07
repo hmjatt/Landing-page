@@ -1,0 +1,79 @@
+/* 
+Student Name: Harmeet Matharoo
+Date Created: 28 May 2023
+File Name: flexbox.css
+Description: This CSS(style rules) file named "flexbox.css" is for the HTML file "Lab3.html" and is used to practice CSS flexbox to build flexible and
+responsive layouts..
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 40px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 0 200px;
+    min-width: 200px;
+}
+
+.red {
+    background-color: #ff6961;
+}
+
+.blue {
+    background-color: #75d4ec;
+}
+
+.green {
+    background-color: #77dd77;
+}
+
+.yellow {
+    background-color: #faf170;
+}
+
+.orange {
+
+    background-color: #ffc578;
+}
+
+footer p {
+    margin: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+}

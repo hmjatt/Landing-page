@@ -1,0 +1,209 @@
+/* 
+Student Name: Harmeet Matharoo
+Date Created: 6 June 2023
+File Name: style.css
+Description: This CSS(style rules) file named "style.css" is for my Personal Portfolio website and contains styles for 3 pages - index, resume and courses.
+*/
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #0d0d0f;
+}
+
+/* Navbar styles */
+
+header {
+    padding: 10px;
+    border-bottom: 2px solid #333333;
+}
+
+nav {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+#my-logo {
+    width: 120px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #0d0d0f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #306cda;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Landing page styles */
+#landing {
+    margin-top: 50px;
+    display: flex;
+}
+
+#landing h1 {
+    font-size: 64px;
+}
+
+#landing h2,
+#landing h1 span {
+    color: #306cda;
+}
+
+#landing div p,
+#landing div ul,
+#landing div h2,
+#landing h1 {
+    margin: 50px;
+}
+
+#landing div ul li {
+    margin: 10px;
+}
+
+
+#landing div a {
+    text-decoration: none;
+    background-color: #306cda;
+    color: #f9f9f9;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 0 50px;
+}
+
+#landing img {
+    border-radius: 5%;
+    margin: 20px;
+    max-height: 500px;
+    align-self: center;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Resume page styles */
+#resume {
+    display: flex;
+    padding: 50px;
+}
+
+#resume h2 {
+    color: #306cda;
+}
+
+#connect h3 {
+    display: inline;
+}
+
+#resume ul,
+.projects li,
+#connect h2 {
+    margin-bottom: 30px;
+}
+
+#resume aside {
+    margin-left: 70px;
+    border-left: 2px solid #333333;
+    padding-left: 50px;
+}
+
+.projects li::marker {
+    font-weight: bold;
+}
+
+#connect a {
+    text-decoration: none;
+    background-color: #306cda;
+    color: #f9f9f9;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 20px;
+}
+
+.thumbnail {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Courses page styles */
+#courses input,
+#courses select,
+.course-details h3,
+.course-details p {
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+#courses h2 {
+    color: #306cda;
+}
+
+#course-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 20px;
+}
+
+#course-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#course-list img {
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}

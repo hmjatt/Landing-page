@@ -1,0 +1,141 @@
+<!-- 
+Student Name: Harmeet Matharoo
+Date Modified: September 7, 2023 
+File Name: course.html
+Description: This HTML file named "courses.html" contains information about my curriculum and courses I have completed for my Portfolio website.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Curriculum Page of My Personal Portfolio">
+    <meta name="keywords" content="assignment1, cst8285, htmlcode, portfolio, courses, curriculum">
+    <meta name="author" content="Harmeet Matharoo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+    <title>Harmeet Matharoo - Courses</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img id="my-logo" src="../images/logo.svg" alt="my logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Courses</h2>
+            <input type="text" id="search" placeholder="Search by course name">
+            <br><br>
+            <label><strong>Filter by level: </strong></label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="level: 1">Level: 1</option>
+                <option value="level: 2">Level: 2</option>
+                <option value="level: 3">Level: 3</option>
+            </select>
+            <br><br>
+            <label><strong>Sort by level: </strong></label>
+            <select id="sort">
+                <option value="lowest">Lowest to Highest</option>
+                <option value="highest">Highest to Lowest</option>
+            </select>
+            <br><br>
+            <ul id="course-list">
+                <li>
+                    <!-- Book cover is from this book: C. S. Horstmann, Big Java: Early Objects. Hoboken, NJ: John Wiley and Sons, Inc., 2014.  -->
+                    <img src="../images/courses/IntroJava.jpg" alt="Introduction to Computer Programming Cover">
+                    <div class="course-details">
+                        <h3>Introduction to Computer Programming</h3>
+                        <p><strong>Level: </strong>1</p>
+                        <p><strong>Course Code: </strong>CST8116</p>
+                        <p><strong>Description: </strong>
+                            Possessing the fundamentals of logic, problem-solving and programming language structure
+                            provides a solid foundation for further study in the field. Students develop introductory
+                            knowledge of computer programming with emphasis on problem analysis and design, using
+                            algorithms, pseudocode, flowcharts, UML Class Diagrams and testing, with the Java
+                            programming language used as a means to implement problem solution designs. Through an
+                            introduction to the Java programming language students use sequential structures, selection
+                            structures, repetition structures, variables, constants, methods, constructors,
+                            one-dimensional arrays, object-oriented programming, classes, objects, abstraction,
+                            encapsulation, inputs, outputs, coding conventions and documentation. Theory is reinforced
+                            with application by means of practical laboratory assessments.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <!-- Book cover is from this book: D. M. Kroenke, D. J. Auer, S. L. Vandenberg, and R. C. Yoder, Database Processing: Fundamentals, Design, and Implementation. Pearson, 2018.  -->
+                    <img src="../images/courses//database.jpg" alt="Database Systems Cover">
+                    <div class="course-details">
+                        <h3>Database Systems</h3>
+                        <p><strong>Level: </strong>2</p>
+                        <p><strong>Course Code: </strong>CST2355</p>
+                        <p><strong>Description: </strong>
+                            Database systems can automate data processing tasks as well as tie into the security of
+                            information technology systems. Students acquire practical experience using market-leading
+                            object-relational database management systems like Oracle and MySQL. Students obtain
+                            hands-on experience with advanced engineering modeling tools along with SQL, SQL scripts and
+                            programming with Oracle's PL/SQL blocks. Database concepts covered include advanced SQL,
+                            case structures, rollup and cube operations, metadata manipulation, data storage and
+                            retrieval, security and transaction control and data warehousing </p>
+                    </div>
+                </li>
+                <li>
+                    <!-- Book cover is from this book: [1] N. B. Dale, D. T. Joyce, and C. Weems, Object-Oriented Data Structures Using Java. Burlington, MA: Jones &amp; Bartlett Learning, 2018.  -->
+                    <img src="../images/courses/Java_OOP.jpg" alt="Object Oriented Programming Cover">
+                    <div class="course-details">
+                        <h3>Object Oriented Programming with Design Patterns </h3>
+                        <p><strong>Level: </strong>2</p>
+                        <p><strong>Course Code: </strong>CST8288</p>
+                        <p><strong>Description: </strong>
+                            Design patterns are programming architecture solutions to common challenges faced in
+                            software implementation. Students implement best practices of object-oriented program
+                            development with software design patterns. Students also apply Unified Modeling Language
+                            (UML) program specifications in the Java programming language. SQL through JDBC technology
+                            is used embedded for developing and using "data access objects". Course topics include
+                            refactoring, domain modelling, JDBC and multithreaded servlet programming. Students develop
+                            proficiency in creating, testing, debugging, deploying and documenting programs and servlets
+                            through practical application.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <!-- Book cover is from this book: M. Yener and A. Theedom, Professional Java EE Design Patterns. Wrox, 2015.  -->
+                    <img src="../images/courses/javaEE.jpg" alt="Enterprise Application Programming Cover">
+                    <div class="course-details">
+                        <h3>Enterprise Application Programming</h3>
+                        <p><strong>Level: </strong>3</p>
+                        <p><strong>Course Code: </strong>CST8277</p>
+                        <p><strong>Description: </strong>
+                            Enterprise applications connect clients to services that are based on data stored in
+                            database management systems. With a focus on the IT Enterprise, students examine the
+                            application enterprise environment using and extending the technologies learned in previous
+                            courses. Students examine the commonly used enterprise systems development technologies such
+                            as Java/Jakarta Enterprise Edition, cloud computing, security and the corporate database
+                            repository.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Harmeet Matharoo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
