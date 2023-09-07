@@ -171,6 +171,7 @@ footer {
 .thumbnail {
     max-width: 400px;
     margin: auto;
+    border-radius: 7px;
 }
 
 /* Courses page styles */
@@ -197,7 +198,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: #e4ebff;
     border-radius: 10px;
     padding: 30px;
 }
