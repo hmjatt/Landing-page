@@ -6,13 +6,7 @@ Description: This CSS(style rules) file named "style.css" is for my Personal Por
 */
 
 /* Reset some default styles */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
+*{
     margin: 0;
     padding: 0;
 }
@@ -23,12 +17,12 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #0d0d0f;
+    font-size: 16px;
 }
 
 /* Navbar styles */
 
 header {
-    padding: 10px;
     border-bottom: 2px solid #333333;
 }
 
@@ -52,12 +46,14 @@ nav ul {
 }
 
 nav ul li:first-child {
-    margin-right: auto;
+    margin-right: 5px;
+
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 10px;
+    
 }
 
 nav ul li a {
@@ -83,13 +79,14 @@ footer {
 
 /* Landing page styles */
 #landing {
-    margin-top: 50px;
-    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #landing h1 {
-    font-size: 64px;
+    font-size: 36px;
 }
+
 
 #landing h2,
 #landing h1 span {
@@ -100,11 +97,13 @@ footer {
 #landing div ul,
 #landing div h2,
 #landing h1 {
-    margin: 50px;
+    margin: 20px;
 }
 
 #landing div ul li {
     margin: 10px;
+    list-style-type: none;
+    text-align: justify;
 }
 
 
@@ -119,8 +118,7 @@ footer {
 
 #landing img {
     border-radius: 5%;
-    margin: 20px;
-    max-height: 500px;
+    max-width: 100%;
     align-self: center;
 }
 
@@ -131,8 +129,7 @@ footer {
 
 /* Resume page styles */
 #resume {
-    display: flex;
-    padding: 50px;
+    padding: 30px;
 }
 
 #resume h2 {
@@ -149,12 +146,6 @@ footer {
     margin-bottom: 30px;
 }
 
-#resume aside {
-    margin-left: 70px;
-    border-left: 2px solid #333333;
-    padding-left: 50px;
-}
-
 .projects li::marker {
     font-weight: bold;
 }
@@ -168,8 +159,13 @@ footer {
     margin: 20px;
 }
 
+#connect div {
+    display: flex;
+    justify-content: space-around;
+}
+
 .thumbnail {
-    max-width: 400px;
+    max-width: 300px;
     margin: auto;
     border-radius: 7px;
 }
@@ -189,9 +185,6 @@ footer {
 
 #course-list {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    grid-gap: 20px;
 }
 
 #course-list li {
@@ -201,10 +194,86 @@ footer {
     background-color: #e4ebff;
     border-radius: 10px;
     padding: 30px;
+    margin: 10px 0;
 }
 
 #course-list img {
     max-width: 200px;
     margin-bottom: 20px;
     border-radius: 7px;
+}
+
+
+
+/* Tablet and larger screens */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    #landing {
+        flex-direction: row;
+    }
+
+    #landing h1 {
+        font-size: 48px;
+    }
+
+    #landing img {
+        max-height: 400px;
+    }
+
+    #landing div div {
+        display: flex;
+    }
+
+    .hob-activities {
+        flex-direction: column;
+    }
+
+    #course-list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        grid-gap: 20px;
+    }
+
+    #resume {
+        display: flex;
+        padding: 50px;
+    }
+
+    #resume aside {
+        margin-left: 70px;
+        border-left: 2px solid #333333;
+        padding-left: 50px;
+    }
+
+    .thumbnail {
+        max-width: 400px;
+    }
+    
+}
+
+/* Desktop screens */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+    }
+
+    #landing h1 {
+        font-size: 64px;
+    }
+
+    #landing img {
+        max-height: 500px;
+    }
 }
